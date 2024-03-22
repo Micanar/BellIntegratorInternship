@@ -2,7 +2,7 @@ package task5;
 
 import java.util.*;
 
-public class Task5 implements Basket{
+public class Task5 implements Basket {
     private Map<String, Integer> products;
 
     public Task5() {
@@ -20,9 +20,9 @@ public class Task5 implements Basket{
 
     @Override
     public void removeProduct(String product) {
-        if (checkKey(product)){
+        if (checkKey(product)) {
             products.remove(product);
-        }else {
+        } else {
             throw new IllegalArgumentException("Продукт не был найден");
         }
 
@@ -52,7 +52,7 @@ public class Task5 implements Basket{
         return products.get(product);
     }
 
-    private boolean checkKey(String product){
+    private boolean checkKey(String product) {
         return products.containsKey(product);
     }
 }

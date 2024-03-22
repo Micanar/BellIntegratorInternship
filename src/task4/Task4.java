@@ -27,7 +27,6 @@ public class Task4 {
 
         int[][] newMatrix = new int[rows][cols];
 
-        // Заполнение новой матрицы
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 // Проверяем, находится ли текущая ячейка внутри оригинальной матрицы
@@ -35,7 +34,6 @@ public class Task4 {
                     // Оставляем значения из оригинальной матрицы без изменений
                     newMatrix[i][j] = matrix[i - layers][j - layers];
                 } else {
-                    // Вычисляем значение для слоев
                     int distanceToBorder = Math.min(Math.min(i, rows - i - 1), Math.min(j, cols - j - 1));
                     newMatrix[i][j] = layers - distanceToBorder;
                 }

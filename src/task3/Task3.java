@@ -3,11 +3,11 @@ package task3;
 public class Task3 {
     public static void main(String[] args) {
         int[][] matrix = {
-                {1, 2, 3,4 ,5},
-                {5, 7, 9,2,1},
-                {0, 9, 1,8,7},
-                {6,3,6,6,6},
-                {99,100,-2,3,1}
+                {1, 2, 3, 4, 5},
+                {5, 7, 9, 2, 1},
+                {0, 9, 1, 8, 7},
+                {6, 3, 6, 6, 6},
+                {99, 100, -2, 3, 1}
         };
 
         int minElement = findMinOnDiagonal(matrix);
